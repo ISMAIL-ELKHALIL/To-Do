@@ -40,7 +40,7 @@ const Card = ({ taskObj, index, deleteTask, updateListArray }) => {
   };
 
   return (
-    <div className="card-wrapper mr-5">
+    <div className="card-wrapper mx-4">
       <div
         className="card-top"
         style={{ "background-color": colors[index % 5].primaryColor }}
@@ -51,11 +51,12 @@ const Card = ({ taskObj, index, deleteTask, updateListArray }) => {
           style={{
             "background-color": colors[index % 5].secondaryColor,
             "border-radius": "10px",
+            fontWeight: "bold",
           }}
         >
           {taskObj.Name}
         </span>
-        <p className="mt-3">{taskObj.Description}</p>
+        <p className="my-4">{taskObj.Description}</p>
 
         <div style={{ position: "absolute", right: "20px", bottom: "20px" }}>
           <i
